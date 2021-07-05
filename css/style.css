@@ -577,23 +577,3 @@
 .divisor {
     color: #b9bcbe;
 }
-
-/* MEDIA QUERY - CELULARES */
-@media screen and (max-width: 375px) {
-    .header-container {
-        max-width: 360px;
-        background-color: #000000;
-    }
-}
-/*
-  @media screen and (min-widt: 375px) and (max-width(768px) {     
-    .header {
-        width: 100%;
-    }
-}
-  @media screen and (min-width: 768) and (max-width: 1024px){
-  // acá el contenido para el resto de tablets, netbooks y notebooks con pantalla chica//
-  }
-  @media screen and (min-width: 1024px){
-  // acá el contenido para pantallas grande //
-  }
