@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link href="Recursos/Real/Logo.png" rel="icon">
+</head>
+<body> 
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="header-logo">
+                <img src="Recursos/Real/Logo.png" alt="logo">  
+            </div>
+            <!-- Barra navegación menú principal -->
+            <section class="navigation-bar">
+                <nav class="header-menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="buscar_viaje.html">Buscar viaje</a></li>
+                        <li><a href="publicar_viaje.html">Publicar viaje</a></li>
+                        <!-- Logueo user -->
+                        <li><a href="#"><img src="Recursos/Real/Log-in2.png"></a>
+                            <ul>
+                                <li>
+                                    <a href="iniciar_sesion.html">
+                                        Iniciar sesión
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="registrarse.html">
+                                        Registrarse
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav> 
+            </section>    
+        </div>
+    </header>
+    <main>
+        <!-- Elegir destino -->
+        <div class="titulo-buscar-publicar-viaje">Elegir destino</div>
+        <!-- From-To-->
+        <section class="from-to">
+            <!-- From -->
+            <div class="from-container">
+                <div class="from">De</div>
+                <div class="search-from"> 
+                    <form action="/search" role="search" method="POST" autocomplete="on">
+                    <input class="origen" type="text" name="origen" id="origen" placeholder="Lugar de origen">
+                    </form>
+                </div>         
+            </div>
+            <!-- To -->
+            <div class="to-container">
+                <div class="to">A</div>
+                <div class="search-to">
+                    <form action="/search" role="search" method="POST" autocomplete="on">
+                    <input class="destino" type="text" name="origen" id="destino" placeholder="Lugar de destino">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="search-button">
+            <input class="search-button" value="Buscar viaje" aria-label="Buscar viaje" name="Buscar viaje" type="submit">
+        </div>
+    </main>   
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="foot-options">
+            <div class="foot-option">
+                <a href="#">Nosotros</a>
+            </div>
+            <div class="foot-option">
+                <a href="#">Preguntas frecuentes</a>
+            </div>
+            <div class="foot-option">
+                <a href="https://github.com/rafaeladominici" target="blank"><img src="Recursos/Real/github.png"></a>    
+            </div>
+        </section>
+    </footer> 
+</body>
+</html>
