@@ -15,15 +15,15 @@
 */
 
 
-/* INDEX - Header */
+/* ---------------------- INDEX - Header ---------------------- */
 .header-container {
     background-color: #0e58be;
-    padding: 0px;
+    padding: 0;
     position: sticky;
-    top: 0px;
-    z-index: 999%;
+    top: 0;
     width: 100%;
-    height: 10vh;
+    height: 6.5rem;
+    margin: auto;
 }
 
 /* Logo */
@@ -32,22 +32,24 @@
 }
 
 .header-logo img {
-    width: 90px;
+    width: 15%;
     height: auto;
-    padding-left: 10px;
-    padding-top: 5px;
+    padding-left: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 1rem;
 }
 
 /* Barra menú */
 .header-menu {
     justify-content: flex-end;
-    font-size: 20px;
+    font-size: 22px;
     text-decoration: none;
     display: flex;
+    padding-right: 2rem;
 }
 
 .header-menu ul {
-    padding-top: 10px;
+    padding-top: 1.5rem;
     list-style: none;
 }
 
@@ -57,7 +59,7 @@
 }
 
 .header-menu ul li a {
-    margin: 0 30px;
+    margin: 0 2rem;
     text-decoration: none;
     color: #ffffff;
 }
@@ -66,7 +68,7 @@
     cursor: pointer;
     color: #ffffff;
     background-color: #ffffff7c;
-    padding: 5px 10px 0px 10px;
+    padding: 10px 10px 0px 10px;
     border-radius: 5px;
     display: block;
 }
@@ -75,49 +77,54 @@
 .header-menu ul ul {
     position: absolute;
     display: none;
-    margin-block-start: 0px;
+    margin-block-start: 0rem;
     background-color: #0e58be;
-    right: 10px;
+    right: 1rem;
     min-width: 200px;
-    border-bottom-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-radius: 5px;
 }
 
 .header-menu ul ul li {
     display: list-item;
-    font-size: 18px;
+    font-size: 20px;
     text-align: left;
+    padding-bottom: 5px;
 }
 
 .header-menu ul li:hover ul {
     display: block;
 }
 
-/* Avatar de sign on */
-.header-menu ul li a img {
-    width: 45px;
+/* Avatar sign on */
+.header-menu ul li img {
+    width: 50px;
     align-items: right;
 }
 
+.header-menu ul li img:hover {
+    cursor: pointer;
+}
+
 /* Foto perfil */
-.header-menu ul li .foto-perfil img {
-    width: 45px;
+.header-menu ul li img {
+    width: 50px;
     align-items: right;
     border-radius: 25px;
 }
 
-/* INDEX - Preferencias viaje */
-/* Título */
-.titulo-elegi-viaje {
-    font-size: 40px;
+/* Preferencias viaje */
+.titulo-elegi-viaje h2 {
+    font-size: 60px;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 4rem;
     color: #3E4958;
+    font-weight: bold;
+    padding-bottom: 1rem;
 }
 
 /* Grid-box preferencias */
 .container-grid-pref-dos {
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     background-color: #1069e3;
     max-width: 60%;
@@ -125,15 +132,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 50px 50px;
-    grid-gap: 15px;
+    grid-gap: 1rem;
     border-radius: 15px;
 }
 
-/* search from */
 .container-grid-pref-dos .origen {
     grid-column: 1 / 1;
     grid-row: 1 / 1;
-    font-size: 1rem;
+    font-size: 20px;
     padding-left: 5px;
     border-style: inherit;
     border-radius: 10px;
@@ -143,11 +149,10 @@
     background-color: #ffffff;
 }
 
-/* search to */
 .container-grid-pref-dos .destino {
     grid-column: 2 / 2;
     grid-row: 1 / 1;
-    font-size: 1rem;
+    font-size: 20px;
     padding-left: 5px;
     border-style: inherit;
     border-radius: 10px;
@@ -157,11 +162,10 @@
     background-color: #ffffff;
 }
 
-/* calendar */
 .container-grid-pref-dos .calendar .calendar {
     grid-column: 3 / 3;
     grid-row: 1 / 1;
-    font-size: 1rem;
+    font-size: 20px;
     padding-left: 5px;
     border-style: inherit;
     border-radius: 10px;
@@ -172,11 +176,10 @@
     color: #3E4958;
 }
 
-/* passenger */
 .container-grid-pref-dos .passenger .number {
     grid-column: 4 / 4;
     grid-row: 1 / 1;
-    font-size: 1rem;
+    font-size: 20px;
     padding-left: 5px;
     border-style: inherit;
     border-radius: 10px;
@@ -184,6 +187,7 @@
     width: 100%;
     padding: .290rem .400rem;
     background-color: #ffffff;
+    color: #3E4958;
 }
 
 /* Search button */
@@ -191,9 +195,9 @@
     cursor: pointer;
     grid-column: 2 / 4;
     grid-row: 2 / 2;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
-    padding: 4px 8px 0px 8px;
+    padding: 6px 8px 0px 8px;
     border: inherit;
     border-radius: 5px;
     color: #3E4958;
@@ -204,10 +208,13 @@
     color: #000000;
 }
 
-/* Container BENEFICIOS */
-/* Beneficio 1*/
+/* Beneficios */
+
+.beneficios {
+    padding-top: 5rem;
+}
+
 .benef1-container {
-    padding-top: 10rem;
     text-align: center;
     max-width: 60%;
     margin: auto;
@@ -216,7 +223,7 @@
     grid-template-rows: 50px;
 }
 
-.benef1-container .img-benef1 img {
+.benef1-container img {
     height: 450px;
     width: auto;
     border-radius: 5px;
@@ -230,13 +237,13 @@
 
 .benef1-container .frase-benef1 {
     text-align: left;
-    padding-top: 200px;
-    font-size: 25px;
+    padding-top: 12rem;
+    font-size: 23px;
     color: #3E4958;
     font-weight: bold;
+    padding-left: 1rem;
 }
 
-/* Beneficio 2 */
 .benef2-container {
     padding-top: 30rem;
     text-align: center;
@@ -248,8 +255,8 @@
 }
 
 .benef2-container img {
-    height: 600%;
-    width: auto;
+    height: auto;
+    width: 450px;
     border-radius: 5px;
     align-content: center;
 }
@@ -261,15 +268,15 @@
 
 .benef2-container .frase-benef2 {
     text-align: right;
-    padding-top: 100px;
-    font-size: 25px;
+    padding-top: 4rem;
+    font-size: 23px;
+    padding-right: 1rem;
     color: #3E4958;
     font-weight: bold;
 }
 
-/* Beneficio 3 */
 .benef3-container {
-    padding-top: 23rem;
+    padding-top: 20rem;
     text-align: center;
     max-width: 60%;
     margin: auto;
@@ -292,19 +299,19 @@
 
 .benef3-container .frase-benef3 {
     text-align: left;
-    padding-top: 200px;
-    font-size: 25px;
+    padding-left: 1rem;
+    padding-top: 12rem;
+    font-size: 23px;
     color: #3E4958;
     font-weight: bold;
 }
 
 
-/* BUSCAR VIAJE */
+/* ---------------------- BUSCAR VIAJE - PUBLICAR VIAJE ---------------------- */
 .titulo-buscar-publicar-viaje {
     font-size: 40px;
     text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 5rem;
     font-weight: bold;
     color: #3E4958;
 }
@@ -313,7 +320,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 400px;
+    height: 15rem;
 }
 
 /* Container FROM */
@@ -322,7 +329,7 @@
     border-radius: 5px;
     display: grid;
     margin: auto;
-    width: 40%;
+    min-width: 40%;
     padding: .500rem .400rem;
     padding-bottom: 1rem;
     padding-top: 1rem;
@@ -357,7 +364,7 @@
     border-radius: 5px;
     display: grid;
     margin: auto;
-    width: 40%;
+    min-width: 40%;
     padding: .500rem .400rem;
     padding-bottom: 1rem;
     padding-top: 1rem;
@@ -392,7 +399,6 @@
     font-size: 20px;
     font-weight: bold;
     padding: 8px 10px 0px 10px;
-    border: inherit;
     border-radius: 5px;
     text-align: center;
     color: #3E4958;
@@ -403,13 +409,12 @@
     color: #000000;
 }
 
-/* FOOTER */
+/* ---------------------- FOOTER ---------------------- */
 .footer {
     width: 100%;
     position: absolute;
-    padding: 0px;
-    position: fixed;
-    bottom: 0px;
+    bottom: 0;
+    position: sticky;
 }
 
 .foot-options {
@@ -439,21 +444,21 @@
     width: 60px;
 }
 
-/* INICIO SESIÓN - REGISTRO */
-/* Título */
-.titulo-inicio-sesion {
-    font-size: 25px;
+/* ---------------------- INICIO SESIÓN - REGISTRO ---------------------- */
+.titulo-inicio-sesion h2 {
+    font-size: 35px;
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 5rem;
     font-weight: bold;
     color: #3E4958;
 }
 
 /* Opciones inicio sesión - registro */
 .opciones-inicio-sesion ul {
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
 }
+
 .opciones-inicio-sesion ul li {
     padding-top: 20px;
 }
@@ -468,14 +473,13 @@
     cursor: pointer;
     padding: 5px 15px 1px 15px;
     border-radius: 5px;
-    background-color: #1069e3;
-    color: #ffffff;
+    color: #0e58be;
 }
 
-/* Mi perfil */
+/* ---------------------- PERFIL USUARIO ---------------------- */
 .hola-rafaela {
     font-size: 30px;
-    padding-left: 25rem;
+    padding-left: 20rem;
     padding-top: 3rem;
     font-weight: bold;
     color: #3E4958;
@@ -484,8 +488,8 @@
 /* Opciones perfil */
 .main-user-box {
     display: flex;
-    padding-left: 25rem;
-    padding-right: 25rem;   
+    padding-left: 20rem;
+    padding-right: 20rem;
 }
 
 .opciones-perfil {
@@ -504,7 +508,6 @@
     color: #0e58be;
 }
 
-/* Opción preferencia viaje */
 .preferencia-user {
     font-size: 18px;
     color: #3E4958;
@@ -514,7 +517,6 @@
     width: 12%;
 }
 
-/* Opción certificaciones */
 .certificacion-user a {
     font-size: 18px;
     text-decoration: none;
@@ -531,8 +533,8 @@
 
 /* Mensajes */
 .mensajes-box {
-    padding-left: 25rem;
-    padding-right: 25rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
     border: 1px solid #0e58be;
 }
 
@@ -565,7 +567,7 @@
 
 .mensaje-user img {
     width: 50px;
-} 
+}
 
 .mensaje-texto {
     font-size: 18px;
@@ -574,6 +576,103 @@
     justify-self: start;
 }
 
-.divisor {
-    color: #b9bcbe;
+
+/* ---------------------- MEDIA QUERY INDEX - CELULARES Y TABLETS ---------------------- */
+@media screen and (max-width: 900px) {
+    .container-grid-pref-dos {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .benef1-container {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .benef1-container img  {
+        height: 20rem;
+    }
+
+    .benef1-container .frase-benef1 {
+        text-align: center;
+        padding-top: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .benef2-container {
+        display: flex;
+        flex-flow: column;
+        padding-top: 1rem;
+        align-items: center;
+    }
+
+    .benef2-container img  {
+        width: 20rem;
+    }
+
+    .benef2-container .frase-benef2 {
+        text-align: center;
+        padding-top: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .benef3-container {
+        display: flex;
+        flex-flow: column;
+        padding-top: 4rem;
+    }
+
+    .benef3-container img  {
+        height: 20rem;
+    }
+
+    .benef3-container .frase-benef3 {
+        text-align: center;
+        padding-top: 1rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* ---------------------- MEDIA QUERY INDEX - HASTA NOTEBOOK ---------------------- */
+@media screen and (min-width: 900px) and (max-width: 1024px){
+    .container-grid-pref-dos {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .benef1-container {
+        display: flex;
+        flex-flow: reverse column;
+    }
+
+    .benef1-container .frase-benef1 {
+        padding-top: 10rem;
+        font-size: 1.2rem;
+        padding-left: 1rem;
+    }
+
+    .benef2-container {
+        display: flex;
+        flex-flow: reverse column;
+        padding-top: 3rem;
+        align-items: center;
+    }
+
+    .benef2-container .frase-benef2 {
+        padding-right: 1rem;
+        padding-top: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .benef3-container {
+        display: flex;
+        flex-flow: reverse column;
+        padding-top: 4rem;
+    }
+
+    .benef3-container .frase-benef3 {
+        padding-left: 1rem;
+        padding-top: 10rem;
+        font-size: 1.2rem;
+    }
 }
