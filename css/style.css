@@ -198,7 +198,6 @@
     font-size: 18px;
     font-weight: bold;
     padding: 6px 8px 0px 8px;
-    border: inherit;
     border-radius: 5px;
     color: #3E4958;
 }
@@ -209,7 +208,6 @@
 }
 
 /* Beneficios */
-
 .beneficios {
     padding-top: 5rem;
 }
@@ -329,11 +327,8 @@
     border-radius: 5px;
     display: grid;
     margin: auto;
-    min-width: 40%;
-    padding: .500rem .400rem;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    padding-right: 1rem;
+    width: 50rem;
+    padding: 1rem 1rem 1rem 1rem;
     background-color: #1069e3;
     grid-template-columns: 0.5fr 4fr;
     grid-template-rows: 1fr;
@@ -364,11 +359,8 @@
     border-radius: 5px;
     display: grid;
     margin: auto;
-    min-width: 40%;
-    padding: .500rem .400rem;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    padding-right: 1rem;
+    width: 50rem;
+    padding: 1rem 1rem 1rem 1rem;
     background-color: #1069e3;
     grid-template-columns: 0.5fr 4fr;
     grid-template-rows: 1fr;
@@ -414,35 +406,35 @@
     width: 100%;
     position: absolute;
     bottom: 0;
-    position: sticky;
 }
 
 .foot-options {
     display: flex;
-    justify-content: center;
     background-color: #0e58be;
-    padding-top: 10px;
+    bottom: 0;
+    height: 4rem;
+    justify-content: center;
 }
 
-.foot-option a {
-    font-size: 15px;
+.foot-option {
+    font-size: 1rem;
     text-decoration: none;
-    margin: 0 30px;
     color: #ffffff;
+    padding-top: 1.5rem;
+}
+
+.foot-option-github a img {
+    margin: 0 5rem;
+    color: #ffffff;
+    width: 5rem;
+    padding-top: 0.5rem;
 }
 
 .foot-option a:hover {
     cursor: pointer;
-    color: #000000;
-    background-color: #ffffff7c;
-    padding: 6px 3px 0px 3px;
-    border-radius: 5px;
     display: block;
 }
 
-.foot-option img {
-    width: 60px;
-}
 
 /* ---------------------- INICIO SESIÓN - REGISTRO ---------------------- */
 .titulo-inicio-sesion h2 {
@@ -455,7 +447,7 @@
 
 /* Opciones inicio sesión - registro */
 .opciones-inicio-sesion ul {
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
 }
 
@@ -471,9 +463,6 @@
 
 .opciones-inicio-sesion ul li a:hover {
     cursor: pointer;
-    padding: 5px 15px 1px 15px;
-    border-radius: 5px;
-    color: #0e58be;
 }
 
 /* ---------------------- PERFIL USUARIO ---------------------- */
@@ -577,7 +566,16 @@
 }
 
 
-/* ---------------------- MEDIA QUERY INDEX - CELULARES Y TABLETS ---------------------- */
+/* ---------------------- MEDIA QUERY - CELULARES Y TABLETS ---------------------- */
+@media screen and (max-width: 660px) {
+    .foot-options {
+        flex-flow: column;
+        height: 8rem;
+        text-align: center;
+    }
+}
+
+
 @media screen and (max-width: 900px) {
     .container-grid-pref-dos {
         display: flex;
@@ -631,9 +629,16 @@
         padding-top: 1rem;
         font-size: 1.2rem;
     }
+
+
+
+    .main-user-box {
+            flex-flow: column;
+    }
 }
 
-/* ---------------------- MEDIA QUERY INDEX - HASTA NOTEBOOK ---------------------- */
+
+/* ---------------------- MEDIA QUERY - HASTA NOTEBOOK ---------------------- */
 @media screen and (min-width: 900px) and (max-width: 1024px){
     .container-grid-pref-dos {
         display: flex;
