@@ -14,96 +14,8 @@
     hoover #ffffff7c
 */
 
-
-/* ---------------------- INDEX - Header ---------------------- */
-.container-fluid {
-    background-color: #0e58be;
-    padding: 0;
-    position: sticky;
-    top: 0;
-    height: 6.5rem;
-    margin: auto;
-}
-
-/* Logo */
-.header-logo {
-    float: left;
-}
-
-.header-logo img {
-    width: 15%;
-    height: auto;
-    padding-left: 1rem;
-    padding-top: 0.75rem;
-    padding-bottom: 1rem;
-}
-
-/* Barra menú */
-.header-menu {
-    justify-content: flex-end;
-    font-size: 22px;
-    text-decoration: none;
-    display: flex;
-    padding-right: 2rem;
-}
-
-.header-menu ul {
-    padding-top: 1.5rem;
-    list-style: none;
-}
-
-.header-menu ul li {
-    display: inline-block;
-    position: relative;
-}
-
-.header-menu ul li a {
-    margin: 0 2rem;
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.header-menu ul li a:hover {
-    cursor: pointer;
-    color: #ffffff;
-    background-color: #ffffff7c;
-    padding: 10px 10px 0px 10px;
-    border-radius: 5px;
-    display: block;
-}
-
-/* User log in - sign in */
-.header-menu ul ul {
-    position: absolute;
-    display: none;
-    margin-block-start: 0rem;
-    background-color: #0e58be;
-    right: 1rem;
-    min-width: 200px;
-    border-radius: 5px;
-}
-
-.header-menu ul ul li {
-    display: list-item;
-    font-size: 20px;
-    text-align: left;
-    padding-bottom: 5px;
-}
-
-.header-menu ul li:hover ul {
-    display: block;
-}
-
-/* Avatar sign on */
-.header-menu ul li img {
-    width: 50px;
-    align-items: right;
-    border-radius: 25px;
-}
-
-.header-menu ul li img:hover {
-    cursor: pointer;
-}
+@import 'header';
+@import 'footer';
 
 /* Preferencias viaje */
 .titulo-elegi-viaje h2 {
@@ -127,55 +39,54 @@
     grid-template-rows: 50px 50px;
     grid-gap: 1rem;
     border-radius: 15px;
-}
 
-.container-grid-pref-dos .origen,
-.container-grid-pref-dos .destino,
-.container-grid-pref-dos .calendar .calendar,
-.container-grid-pref-dos .passenger .number {
-    font-size: 20px;
-    padding-left: 5px;
-    border-style: inherit;
-    border-radius: 10px;
-    display: block;
-    width: 100%;
-    padding: .290rem .400rem;
-    background-color: #ffffff;
-    grid-row: 1 / 1;
-}
+    .origen,
+    .destino,
+    .calendar .calendar,
+    .passenger .number {
+        font-size: 20px;
+        padding-left: 5px;
+        border-style: inherit;
+        border-radius: 10px;
+        display: block;
+        width: 100%;
+        padding: .290rem .400rem;
+        background-color: #ffffff;
+        grid-row: 1 / 1;
+    }
 
-.container-grid-pref-dos .origen {
-    grid-column: 1 / 1;
-}
+    .origen {
+        grid-column: 1 / 1;
+    }
 
-.container-grid-pref-dos .destino {
-    grid-column: 2 / 2;
-}
+    .destino {
+        grid-column: 2 / 2;
+    }
 
-.container-grid-pref-dos .calendar .calendar {
-    grid-column: 3 / 3;
-    color: #3E4958;
-}
+    .calendar .calendar {
+        grid-column: 3 / 3;
+        color: #3E4958;
+    }
 
-.container-grid-pref-dos .passenger .number {
-    grid-column: 4 / 4;
-}
+    .passenger .number {
+        grid-column: 4 / 4;
+    }
 
-/* Search button */
-.container-grid-pref-dos .search-button {
-    cursor: pointer;
-    grid-column: 2 / 4;
-    grid-row: 2 / 2;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 6px 8px 0px 8px;
-    border-radius: 5px;
-    color: #3E4958;
-}
+    .search-button {
+        cursor: pointer;
+        grid-column: 2 / 4;
+        grid-row: 2 / 2;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 6px 8px 0px 8px;
+        border-radius: 5px;
+        color: #3E4958;
 
-.container-grid-pref-dos .search-button:hover {
-    cursor: pointer;
-    color: #000000;
+        :hover {
+            cursor: pointer;
+            color: #000000;
+        }
+    }
 }
 
 /* Beneficios */
@@ -199,6 +110,14 @@
     border-radius: 5px;
     align-content: center;
 }
+
+.benef2-container img {
+    height: auto;
+    width: 450px;
+    border-radius: 5px;
+    align-content: center;
+}
+
 
 .benef1-container img:hover,
 .benef2-container img:hover,
@@ -245,13 +164,6 @@
     grid-template-rows: 50px;
 }
 
-.benef2-container img {
-    width: 450px;
-    height: auto;
-    border-radius: 5px;
-    align-content: center;
-}
-
 .benef3-container .frase-benef3 {
     text-align: left;
     padding-left: 1rem;
@@ -260,7 +172,6 @@
     color: #3E4958;
     font-weight: bold;
 }
-
 
 /* ---------------------- BUSCAR VIAJE - PUBLICAR VIAJE ---------------------- */
 .titulo-buscar-publicar-viaje {
@@ -278,7 +189,6 @@
     height: 15rem;
 }
 
-/* Container FROM - TO */
 .from-container,
 .to-container {
     border-style: inherit;
@@ -290,30 +200,29 @@
     background-color: #1069e3;
     grid-template-columns: 0.5fr 4fr;
     grid-template-rows: 1fr;
+
+    .from,
+    .to {
+        text-align: center;
+        grid-column: 1 / 1;
+        font-size: 28px;
+        color: #ffffff;
+        padding-top: 10px;
+    }
+
+    .search-from .origen,
+    .search-to .destino {
+        text-align: left;
+        width: 100%;
+        font-size: 25px;
+        font-weight: bold;
+        color: #3E4958;
+        border-radius: 5px;
+        padding-top: 15px;
+        border-style: inherit;
+    }
 }
 
-.from-container .from,
-.to-container .to {
-    text-align: center;
-    grid-column: 1 / 1;
-    font-size: 28px;
-    color: #ffffff;
-    padding-top: 10px;
-}
-
-.from-container .search-from .origen,
-.to-container .search-to .destino {
-    text-align: left;
-    width: 100%;
-    font-size: 25px;
-    font-weight: bold;
-    color: #3E4958;
-    border-radius: 5px;
-    padding-top: 15px;
-    border-style: inherit;
-}
-
-/* Search button */
 .search-button {
     cursor: pointer;
     font-size: 20px;
@@ -322,75 +231,31 @@
     border-radius: 5px;
     text-align: center;
     color: #3E4958;
+
+    :hover {
+        cursor: pointer;
+        color: #000000;
+    }
 }
 
-.search-button:hover {
-    cursor: pointer;
-    color: #000000;
-}
-
-/* ---------------------- FOOTER ---------------------- */
-.footer {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-}
-
-.foot-options {
-    display: flex;
-    background-color: #0e58be;
-    bottom: 0;
-    height: 4rem;
-    justify-content: center;
-}
-
-.foot-option {
-    font-size: 1rem;
-    text-decoration: none;
-    color: #ffffff;
-    padding-top: 1.5rem;
-}
-
-.foot-option-github a img {
-    margin: 0 5rem;
-    color: #ffffff;
-    width: 5rem;
-    padding-top: 0.5rem;
-}
-
-.foot-option a:hover {
-    cursor: pointer;
-    display: block;
-}
-
-
-/* ---------------------- INICIO SESIÓN - REGISTRO ---------------------- */
-.titulo-inicio-sesion h2 {
-    font-size: 35px;
-    text-align: center;
-    padding-top: 5rem;
-    font-weight: bold;
-    color: #3E4958;
-}
-
-/* Opciones inicio sesión - registro */
+/* ---------------------- INICIO SESIÓN -REGISTRO ---------------------- */
 .opciones-inicio-sesion ul {
     font-size: 22px;
     text-align: center;
-}
 
-.opciones-inicio-sesion ul li {
-    padding-top: 20px;
-}
+    li {
+        padding-top: 20px;
 
-.opciones-inicio-sesion ul li a {
-    text-decoration: none;
-    color: #1069e3;
-    font-weight: bold;
-}
+        a {
+            text-decoration: none;
+            color: #1069e3;
+            font-weight: bold;
 
-.opciones-inicio-sesion ul li a:hover {
-    cursor: pointer;
+            :hover {
+                cursor: pointer;
+            }
+        }
+    }
 }
 
 /* ---------------------- PERFIL USUARIO ---------------------- */

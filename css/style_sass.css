@@ -1,0 +1,607 @@
+@charset "UTF-8";
+* {
+  font-family: 'Baloo Tammudu 2';
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* PALETA COLORES 
+    blanco #ffffff
+    azul #1069e3
+    azul oscuro #0e58be
+    gris #3E4958 
+    hoover #ffffff7c
+*/
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.container-fluid {
+  background-color: #0e58be;
+  padding: 0;
+  height: 6.5rem;
+  margin: auto;
+}
+
+.container-fluid .header-logo {
+  float: left;
+}
+
+.container-fluid .header-logo img {
+  width: 15%;
+  height: auto;
+  padding-left: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 1rem;
+}
+
+.container-fluid .header-menu {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 22px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 2rem;
+}
+
+.container-fluid .header-menu ul {
+  padding-top: 1.5rem;
+  list-style: none;
+}
+
+.container-fluid .header-menu ul li {
+  display: inline-block;
+  position: relative;
+}
+
+.container-fluid .header-menu ul li a {
+  margin: 0 2rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.container-fluid .header-menu ul li img {
+  width: 50px;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  border-radius: 25px;
+}
+
+.container-fluid .header-menu ul ul {
+  position: absolute;
+  display: none;
+  -webkit-margin-before: 0rem;
+          margin-block-start: 0rem;
+  background-color: #0e58be;
+  right: 1rem;
+  min-width: 200px;
+  border-radius: 5px;
+}
+
+.container-fluid .header-menu ul ul li {
+  display: list-item;
+  font-size: 20px;
+  text-align: left;
+  padding-bottom: 5px;
+}
+
+.header-menu ul li:hover ul {
+  display: block;
+}
+
+.header-menu ul li a:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #ffffff7c;
+  padding: 10px 10px 0px 10px;
+  border-radius: 5px;
+  display: block;
+}
+
+.header-menu ul li img:hover {
+  cursor: pointer;
+}
+
+.container-main {
+  min-height: calc(100vh - 4rem - 6.5rem);
+}
+
+.footer {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+}
+
+.foot-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #0e58be;
+  height: 4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.foot-option {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #ffffff;
+  padding-top: 1.5rem;
+}
+
+.foot-option a:hover {
+  cursor: pointer;
+  display: block;
+}
+
+.foot-option-github a img {
+  margin: 0 5rem;
+  color: #ffffff;
+  width: 5rem;
+  padding-top: 0.5rem;
+}
+
+/* ---------------------- INICIO SESIÓN - REGISTRO ---------------------- */
+.titulo-inicio-sesion h2 {
+  font-size: 35px;
+  text-align: center;
+  padding-top: 5rem;
+  font-weight: bold;
+  color: #3E4958;
+}
+
+/* Preferencias viaje */
+.titulo-elegi-viaje h2 {
+  font-size: 60px;
+  text-align: center;
+  padding-top: 4rem;
+  color: #3E4958;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+/* Grid-box preferencias */
+.container-grid-pref-dos {
+  padding: 20px;
+  text-align: center;
+  background-color: #1069e3;
+  max-width: 60%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 50px 50px;
+      grid-template-rows: 50px 50px;
+  grid-gap: 1rem;
+  border-radius: 15px;
+}
+
+.container-grid-pref-dos .origen,
+.container-grid-pref-dos .destino,
+.container-grid-pref-dos .calendar .calendar,
+.container-grid-pref-dos .passenger .number {
+  font-size: 20px;
+  padding-left: 5px;
+  border-style: inherit;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  padding: .290rem .400rem;
+  background-color: #ffffff;
+  -ms-grid-row: 1;
+  grid-row: 1 / 1;
+}
+
+.container-grid-pref-dos .origen {
+  -ms-grid-column: 1;
+  grid-column: 1 / 1;
+}
+
+.container-grid-pref-dos .destino {
+  -ms-grid-column: 2;
+  grid-column: 2 / 2;
+}
+
+.container-grid-pref-dos .calendar .calendar {
+  -ms-grid-column: 3;
+  grid-column: 3 / 3;
+  color: #3E4958;
+}
+
+.container-grid-pref-dos .passenger .number {
+  -ms-grid-column: 4;
+  grid-column: 4 / 4;
+}
+
+.container-grid-pref-dos .search-button {
+  cursor: pointer;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+  -ms-grid-row: 2;
+  grid-row: 2 / 2;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 6px 8px 0px 8px;
+  border-radius: 5px;
+  color: #3E4958;
+}
+
+.container-grid-pref-dos .search-button :hover {
+  cursor: pointer;
+  color: #000000;
+}
+
+/* Beneficios */
+.beneficios {
+  padding-top: 5rem;
+}
+
+.benef1-container {
+  text-align: center;
+  max-width: 60%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 50px;
+      grid-template-rows: 50px;
+}
+
+.benef1-container img,
+.benef3-container img {
+  height: 450px;
+  width: auto;
+  border-radius: 5px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.benef2-container img {
+  height: auto;
+  width: 450px;
+  border-radius: 5px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.benef1-container img:hover,
+.benef2-container img:hover,
+.benef3-container img:hover {
+  opacity: 80%;
+  -webkit-transition: ease-in-out 0.10s;
+  transition: ease-in-out 0.10s;
+}
+
+.benef1-container .frase-benef1 {
+  text-align: left;
+  padding-top: 12rem;
+  font-size: 23px;
+  color: #3E4958;
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
+.benef2-container {
+  padding-top: 30rem;
+  text-align: center;
+  max-width: 60%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 50px;
+      grid-template-rows: 50px;
+}
+
+.benef2-container .frase-benef2 {
+  text-align: right;
+  padding-top: 4rem;
+  font-size: 23px;
+  padding-right: 1rem;
+  color: #3E4958;
+  font-weight: bold;
+}
+
+.benef3-container {
+  padding-top: 20rem;
+  text-align: center;
+  max-width: 60%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 50px;
+      grid-template-rows: 50px;
+}
+
+.benef3-container .frase-benef3 {
+  text-align: left;
+  padding-left: 1rem;
+  padding-top: 12rem;
+  font-size: 23px;
+  color: #3E4958;
+  font-weight: bold;
+}
+
+/* ---------------------- BUSCAR VIAJE - PUBLICAR VIAJE ---------------------- */
+.titulo-buscar-publicar-viaje {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 5rem;
+  font-weight: bold;
+  color: #3E4958;
+}
+
+.from-to {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 15rem;
+}
+
+.from-container,
+.to-container {
+  border-style: inherit;
+  border-radius: 5px;
+  display: -ms-grid;
+  display: grid;
+  margin: auto;
+  width: 50rem;
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: #1069e3;
+  -ms-grid-columns: 0.5fr 4fr;
+      grid-template-columns: 0.5fr 4fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.from-container .from,
+.from-container .to,
+.to-container .from,
+.to-container .to {
+  text-align: center;
+  -ms-grid-column: 1;
+  grid-column: 1 / 1;
+  font-size: 28px;
+  color: #ffffff;
+  padding-top: 10px;
+}
+
+.from-container .search-from .origen,
+.from-container .search-to .destino,
+.to-container .search-from .origen,
+.to-container .search-to .destino {
+  text-align: left;
+  width: 100%;
+  font-size: 25px;
+  font-weight: bold;
+  color: #3E4958;
+  border-radius: 5px;
+  padding-top: 15px;
+  border-style: inherit;
+}
+
+.search-button {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px 10px 0px 10px;
+  border-radius: 5px;
+  text-align: center;
+  color: #3E4958;
+}
+
+.search-button :hover {
+  cursor: pointer;
+  color: #000000;
+}
+
+/* ---------------------- INICIO SESIÓN -REGISTRO ---------------------- */
+.opciones-inicio-sesion ul {
+  font-size: 22px;
+  text-align: center;
+}
+
+.opciones-inicio-sesion ul li {
+  padding-top: 20px;
+}
+
+.opciones-inicio-sesion ul li a {
+  text-decoration: none;
+  color: #1069e3;
+  font-weight: bold;
+}
+
+.opciones-inicio-sesion ul li a :hover {
+  cursor: pointer;
+}
+
+/* ---------------------- PERFIL USUARIO ---------------------- */
+.hola-rafaela {
+  font-size: 30px;
+  padding-left: 20rem;
+  padding-top: 3rem;
+  font-weight: bold;
+  color: #3E4958;
+}
+
+.opcion-perfil {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0e58be;
+  padding-top: 1.5rem;
+}
+
+.preferencia-user {
+  font-size: 1rem;
+  color: #3E4958;
+}
+
+.preferencia-user img,
+.certificacion-user img {
+  width: 5%;
+}
+
+.certificacion-user a,
+.editar a {
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+/* ---------------------- MEDIA QUERY - CELULARES Y TABLETS ---------------------- */
+@media screen and (max-width: 660px) {
+  .foot-options {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    height: 8rem;
+    text-align: center;
+  }
+  .hola-rafaela {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container-grid-pref-dos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .benef1-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .benef1-container img,
+  .benef3-container img {
+    height: 20rem;
+  }
+  .benef1-container .frase-benef1,
+  .benef2-container .frase-benef2,
+  .benef3-container .frase-benef3 {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+  }
+  .benef2-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    padding-top: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .benef3-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    padding-top: 4rem;
+  }
+  .benef2-container img {
+    width: 30rem;
+  }
+  .main-user-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .from-container,
+  .to-container {
+    width: 100%;
+  }
+}
+
+/* ---------------------- MEDIA QUERY - HASTA NOTEBOOK ---------------------- */
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+  .container-grid-pref-dos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .benef1-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: reverse column;
+            flex-flow: reverse column;
+  }
+  .benef1-container .frase-benef1,
+  .benef2-container .frase-benef2,
+  .benef3-container .frase-benef3 {
+    padding-top: 10rem;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+  }
+  .benef2-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: reverse column;
+            flex-flow: reverse column;
+    padding-top: 3rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .benef3-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: reverse column;
+            flex-flow: reverse column;
+    padding-top: 4rem;
+  }
+}
+/*# sourceMappingURL=style_sass.css.map */
