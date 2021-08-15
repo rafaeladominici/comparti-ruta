@@ -103,7 +103,7 @@
 
 .benef1-container img,
 .benef3-container img {
-    height: 450px;
+    height: 350px;
     width: auto;
     border-radius: 5px;
     align-content: center;
@@ -111,7 +111,7 @@
 
 .benef2-container img {
     height: auto;
-    width: 450px;
+    width: 400px;
     border-radius: 5px;
     align-content: center;
 }
@@ -346,7 +346,7 @@
     }
 
     .hola-rafaela {
-        text-align: center;
+        text-align: left;
     }
 
     .footer {
@@ -358,6 +358,7 @@
     .container-grid-pref-dos {
         display: flex;
         flex-flow: column;
+        width: 100%;
     }
 
     .benef1-container {

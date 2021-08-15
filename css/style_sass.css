@@ -41,6 +41,24 @@
       grid-template-rows: 50px 50px;
   grid-gap: 1rem;
   border-radius: 15px;
+  /*.from-to {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15rem;
+}
+
+.from-container,
+.to-container {
+    border-style: inherit;
+    border-radius: 5px;
+    display: grid;
+    margin: auto;
+    width: 50rem;
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: #1069e3;
+    grid-template-columns: 0.5fr 4fr;
+    grid-template-rows: 1fr;*/
 }
 
 .container-grid-pref-dos .origen,
@@ -118,7 +136,7 @@
 
 .benef1-container img,
 .benef3-container img {
-  height: 450px;
+  height: 350px;
   width: auto;
   border-radius: 5px;
   -ms-flex-line-pack: center;
@@ -127,7 +145,7 @@
 
 .benef2-container img {
   height: auto;
-  width: 450px;
+  width: 400px;
   border-radius: 5px;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -384,7 +402,7 @@
     text-align: center;
   }
   .hola-rafaela {
-    text-align: center;
+    text-align: left;
   }
   .footer {
     height: 8rem;
@@ -400,6 +418,7 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
+    width: 100%;
   }
   .benef1-container {
     display: -webkit-box;
