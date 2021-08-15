@@ -16,7 +16,6 @@
     hoover #ffffff7c
 */
 /* ---------------------- INDEX ---------------------- */
-/* Preferencias viaje */
 .titulo-elegi-viaje h2 {
   font-size: 60px;
   text-align: center;
@@ -203,6 +202,7 @@
   color: #3E4958;
 }
 
+/* Bloque */
 .from-to {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -274,7 +274,7 @@
   color: #000000;
 }
 
-/* ---------------------- INICIO SESIÓN -REGISTRO ---------------------- */
+/* ---------------------- INICIO SESIÓN - REGISTRO ---------------------- */
 .opciones-inicio-sesion ul {
   font-size: 22px;
   text-align: center;
