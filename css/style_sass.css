@@ -15,151 +15,7 @@
     gris #3E4958 
     hoover #ffffff7c
 */
-.header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
-.container-fluid {
-  background-color: #0e58be;
-  padding: 0;
-  height: 6.5rem;
-  margin: auto;
-}
-
-.container-fluid .header-logo {
-  float: left;
-}
-
-.container-fluid .header-logo img {
-  width: 15%;
-  height: auto;
-  padding-left: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 1rem;
-}
-
-.container-fluid .header-menu {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  font-size: 22px;
-  text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-right: 2rem;
-}
-
-.container-fluid .header-menu ul {
-  padding-top: 1.5rem;
-  list-style: none;
-}
-
-.container-fluid .header-menu ul li {
-  display: inline-block;
-  position: relative;
-}
-
-.container-fluid .header-menu ul li a {
-  margin: 0 2rem;
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.container-fluid .header-menu ul li img {
-  width: 50px;
-  -webkit-box-align: right;
-      -ms-flex-align: right;
-          align-items: right;
-  border-radius: 25px;
-}
-
-.container-fluid .header-menu ul ul {
-  position: absolute;
-  display: none;
-  -webkit-margin-before: 0rem;
-          margin-block-start: 0rem;
-  background-color: #0e58be;
-  right: 1rem;
-  min-width: 200px;
-  border-radius: 5px;
-}
-
-.container-fluid .header-menu ul ul li {
-  display: list-item;
-  font-size: 20px;
-  text-align: left;
-  padding-bottom: 5px;
-}
-
-.header-menu ul li:hover ul {
-  display: block;
-}
-
-.header-menu ul li a:hover {
-  cursor: pointer;
-  color: #ffffff;
-  background-color: #ffffff7c;
-  padding: 10px 10px 0px 10px;
-  border-radius: 5px;
-  display: block;
-}
-
-.header-menu ul li img:hover {
-  cursor: pointer;
-}
-
-.container-main {
-  min-height: calc(100vh - 4rem - 6.5rem);
-}
-
-.footer {
-  width: 100%;
-  bottom: 0;
-  position: fixed;
-}
-
-.foot-options {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #0e58be;
-  height: 4rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.foot-option {
-  font-size: 1rem;
-  text-decoration: none;
-  color: #ffffff;
-  padding-top: 1.5rem;
-}
-
-.foot-option a:hover {
-  cursor: pointer;
-  display: block;
-}
-
-.foot-option-github a img {
-  margin: 0 5rem;
-  color: #ffffff;
-  width: 5rem;
-  padding-top: 0.5rem;
-}
-
-/* ---------------------- INICIO SESIÓN - REGISTRO ---------------------- */
-.titulo-inicio-sesion h2 {
-  font-size: 35px;
-  text-align: center;
-  padding-top: 5rem;
-  font-weight: bold;
-  color: #3E4958;
-}
-
+/* ---------------------- INDEX ---------------------- */
 /* Preferencias viaje */
 .titulo-elegi-viaje h2 {
   font-size: 60px;
@@ -470,6 +326,53 @@
   text-decoration: none;
 }
 
+/* ---------------------- FOOTER ---------------------- */
+.container-main {
+  height: 2000px;
+}
+
+.footer {
+  height: 5rem;
+  background-color: #0E58BE;
+}
+
+.foot-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.foot-option {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #ffffff;
+  padding-top: 1.5rem;
+}
+
+.foot-option a:hover {
+  cursor: pointer;
+  display: block;
+}
+
+.foot-option-github a img {
+  margin: 0.5rem;
+  color: #ffffff;
+  width: 5rem;
+  padding-top: 0.5rem;
+}
+
+/* ---------------------- INICIO SESIÓN - REGISTRO ---------------------- */
+.titulo-inicio-sesion h2 {
+  font-size: 35px;
+  text-align: center;
+  padding-top: 5rem;
+  font-weight: bold;
+  color: #3E4958;
+}
+
 /* ---------------------- MEDIA QUERY - CELULARES Y TABLETS ---------------------- */
 @media screen and (max-width: 660px) {
   .foot-options {
@@ -482,6 +385,9 @@
   }
   .hola-rafaela {
     text-align: center;
+  }
+  .footer {
+    height: 8rem;
   }
 }
 

@@ -14,9 +14,7 @@
     hoover #ffffff7c
 */
 
-@import 'header';
-@import 'footer';
-
+/* ---------------------- INDEX ---------------------- */
 /* Preferencias viaje */
 .titulo-elegi-viaje h2 {
     font-size: 60px;
@@ -290,6 +288,55 @@
     text-decoration: none;
 }
 
+
+/* ---------------------- FOOTER ---------------------- */
+.container-main {
+    height: 2000px;
+  }
+  
+  .footer {
+    height: 5rem;
+    background-color: #0E58BE;
+  }
+  
+  .foot-options {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .foot-option {
+      font-size: 1rem;
+      text-decoration: none;
+      color: #ffffff;
+      padding-top: 1.5rem;
+  
+      a:hover {
+          cursor: pointer;
+          display: block;
+      }
+  }
+  
+  .foot-option-github a img {
+      margin: 0.5rem;
+      color: #ffffff;
+      width: 5rem;
+      padding-top: 0.5rem;
+  }
+
+  
+  /* ---------------------- INICIO SESIÓN - REGISTRO ---------------------- */
+  .titulo-inicio-sesion h2 {
+      font-size: 35px;
+      text-align: center;
+      padding-top: 5rem;
+      font-weight: bold;
+      color: #3E4958;
+  }  
+
 /* ---------------------- MEDIA QUERY - CELULARES Y TABLETS ---------------------- */
 @media screen and (max-width: 660px) {
     .foot-options {
@@ -301,6 +348,10 @@
     .hola-rafaela {
         text-align: center;
     }
+
+    .footer {
+        height: 8rem;
+      }
 }
 
 @media screen and (max-width: 900px) {
